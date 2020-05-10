@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
                         requestPermissions(mPermissionsArrays, REQUEST_PERMISSION);
                     } else {
                         // TODO
+                        return true;
                     }
                 } else {
                     Toast.makeText(MainActivity.this, "已经获取所有所需权限", Toast.LENGTH_SHORT).show();

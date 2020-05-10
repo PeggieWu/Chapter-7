@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:configChanges="orientation|screenSize">
+
+
+    <RelativeLayout
+        android:id="@+id/video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@+id/videoPlay_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/video_now_time"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="00:00:00"/>
+
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_weight="1.00" />
+
+            <TextView
+                android:id="@+id/video_total_time"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="00:00:00" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/buttonPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Play" />
+
+    <Button
+        android:id="@+id/buttonPause"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Pause" />
+</LinearLayout>
